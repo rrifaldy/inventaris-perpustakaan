@@ -1,0 +1,95 @@
+{% extends 'index.html' %} {% block body %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Barang Masuk</h1>
+  </div>
+  <div id="Loader">
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border text-success" style="width: 7rem; height: 7rem;" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      data-bs-whatever="@mdo" style="margin-bottom: 15px;">Tambah data</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Data baru</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="nama-barang" class="col-form-label">Nama barang</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="kategori" class="col-form-label">Kategori</label>
+                <select class="form-select" id="kategori-barang">
+                  <option selected disabled value="">Pilih kategori</option>
+                  <option value="peralatan">Peralatan</option>
+                  <option value="buku">Buku</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="jumlah" class="col-form-label">Jumlah</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="datetime" class="col-form-label">Date-time</label>
+                <input type="date" class="form-control" id="recipient-name">
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        Data Barang Masuk
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered table-sm">
+          <thead class="table table-secondary">
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nama barang</th>
+              <th scope="col">Kategori</th>
+              <th scope="col">Jumlah</th>
+              <th scope="col">Date-time</th>
+              <th scope="col">Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Kursi</td>
+              <td>Peralatan</td>
+              <td>14</td>
+              <td>2022-11-02 14:55</td>
+              <td><button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-danger">Hapus</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Pensil</td>
+              <td>Peralatan</td>
+              <td>40</td>
+              <td>2022-11-02 14:55</td>
+              <td><button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-danger">Hapus</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

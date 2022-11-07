@@ -1,0 +1,127 @@
+
+.styled-table {
+    border-collapse: collapse;
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 0.9em;
+    font-family: "Poppins-Black";
+    min-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #6C63FF;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 10px 12px;
+}
+
+.styled-table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #6C63FF;
+}
+
+.btn-add {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: block;
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #6C63FF, #6C63FF, #6C63FF);
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins-Black';
+    background-size: 200%;
+    transition: .5%;
+}
+
+.btn-ubah {
+    margin-top: 5px;
+    margin-left: 5px;
+    display: block;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 0.3  rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #26de81, #26de81, #26de81);
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins-Black';
+    background-size: 200%;
+    transition: .5%;
+}
+
+.btn-hapus {
+    margin-top: 5px;
+    margin-left: 5px;
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 30px;
+    font-size: 0.3  rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right,#fc5c65,#fc5c65,#fc5c65);
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins-Black';
+    background-size: 200%;
+    transition: .5%;
+}
+
+.btn-submit{
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 1rem 0;
+    margin-left: 110px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #6C63FF, #6C63FF, #6C63FF);
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins-Black';
+    background-size: 200%;
+    transition: .5%;
+}
+
+.input-div.a{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.input-data{
+    width:400px;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    font-family: 'Poppins-Black';
+    border-radius: 10px;
+    border: 1px solid #6C63FF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.input-data:hover{
+    
+}
