@@ -16,6 +16,10 @@ def login():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/masterbarang')
+def masterbarang():
+    return render_template('masterbarang.html')
+
 @app.route('/barangmasuk')
 def barangmasuk():
     return render_template('barangmasuk.html')
@@ -23,6 +27,10 @@ def barangmasuk():
 @app.route('/barangkeluar')
 def barangkeluar():
     return render_template('barangkeluar.html')
+
+@app.route('/laporanbarang')
+def laporanbarang():
+    return render_template('laporanbarang.html')    
 
 @app.route('/laporanmasuk')
 def laporanmasuk():
