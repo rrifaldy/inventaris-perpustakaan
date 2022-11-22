@@ -10,6 +10,42 @@
     </div>
   </div>
 </div>
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  
+<!-- <div class="row row-cols-1 row-cols-md-3 g-4"> //batas akhir -->
+<div class="container"> 
+
+    <form>
+      <div class="mb-3">
+        <input type="date" class="form-control" id="recipient-name" placeholder="Dari tanggal">
+        <label for="Date-time" class="col-form-label">s/d</label>
+        <input type="date" class="form-control" id="recipient-name" placeholder="Sampai tanggal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo" style="margin-bottom: 15px;">Cari</button>
+        <div class="modal-body">        
+      </div>
+  </div>
+    <div class="tabel">
+        <table>
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col" nowrap>Nama Barang</th>
+                <th scope="col">Kategori</th>
+                <th scope="col">Jumlah</th>
+                <th scope="col">Date-time</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    
+                    <td nowrap><?php echo $user['nama']?></td>
+                    <td><?php echo $user["username"] ?></td>
+                    <td><?php echo $user["email"]?></td>
+                    <td><?php echo $user["no_telp"]?></td>
+                    <td><?php echo $user["gender"]?></td>
+                    <td><?php echo $user["profile_picture"]?></td>
+
+                </tr>
+        </tbody>
+    </table>
+  </div>
 </main> {% endblock %}
